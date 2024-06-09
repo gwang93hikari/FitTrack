@@ -1,8 +1,17 @@
 <html layout:decorate="~{layout}">
-	<div layout:fragment="content" class="container my-3">
-		
-		<a href="/writeFitRecord">TEST</a>
-		
-		
+<div layout:fragment="content" class="container my-3">
+	
+	<div th:replace="~{msg_primary :: msgFrimaryFragment}"></div>
+	
+	<div>CALENDAR</div>
+	
+	
+	<div class="list-group">
+	  <a href="/writeFitRecord" class="list-group-item list-group-item-action">운동기록등록</a>
+	  <a href="#" class="list-group-item list-group-item-action">운동기록수정</a>
+	  <a href="#" class="list-group-item list-group-item-action disabled">이번주기록결산</a>
 	</div>
+	
+
+</div>
 </html>

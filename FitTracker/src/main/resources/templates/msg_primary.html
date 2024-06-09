@@ -1,0 +1,4 @@
+<div th:if="${message}" th:fragment="msgFrimaryFragment" class="alert alert-primary alert-dismissible fade show" role="alert" >
+	<strong th:if="${message}" th:text="${message}"></strong>
+	<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
