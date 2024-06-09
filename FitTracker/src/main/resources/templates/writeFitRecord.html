@@ -1,0 +1,50 @@
+<html layout:decorate="~{layout}">
+<div layout:fragment="content" class="container my-3">
+	
+	<h1 class="mt-5 mb-4">운동기록입력</h1>
+	
+	<form method="post" enctype="multipart/form-data" action="/FitRecord/save" class="mb-5">
+		
+	
+		<div class="mb-3">
+			<label for="startImage" class="form-label">운동시작사진</label>
+			<input type="file" class="form-control" id="fitStimeImage" name="fitStimeImage" >
+		</div>
+		
+		<div class="mb-3">
+			<label for="endImage" class="form-label">운동완료사진</label>
+			<input type="file" class="form-control" id="fitEtimeImage" name="fitEtimeImage" >
+		</div>
+		
+		<div class="mb-3">
+			<label for="endImage" class="form-label">걸음수인증사진</label>
+			<input type="file" class="form-control" id="stepCountImage" name="stepCountImage" >
+		</div>
+		
+		<div class="mb-3">
+			<label for="uploadDatetime" class="form-label">운동시작시간(수동입력)</label>
+			<input type="datetime-local" class="form-control" id="fitStime" name="fitStime" >
+		</div>
+		
+		<div class="mb-3">
+			<label for="uploadDatetime" class="form-label">운동종료시간(수동입력)</label>
+			<input type="datetime-local" class="form-control" id="fitEtime" name="fitEtime" >
+		</div>
+		
+		<div class="mb-3">
+			<label for="uploadDatetime" class="form-label">걸음수(수동입력)</label>
+			<input type="text" class="form-control" id="stepCount" name="stepCount" >
+		</div>
+
+		<div class="mb-3">
+			<label for="uploadDatetime" class="form-label">메모</label>
+			<textarea class="form-control" id="content" name="content"></textarea>
+		</div>
+				
+		<button type="submit" class="btn btn-primary">등록하기</button>
+	</form>
+
+
+</div>
+
+</html>
